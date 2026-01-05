@@ -1,67 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --blue: #0b3c5d;
+  --blue-dark: #072a40;
+  --gray: #f4f6f8;
+  --text: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: #fff;
 }
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
-.navbar {
-  background: #0f172a;
-  color: #fff;
-  padding: 15px 0;
+.header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.navbar .container {
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 0;
 }
 
-.navbar a {
-  color: #fff;
-  margin-left: 15px;
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--blue);
+}
+
+.nav a {
+  margin-left: 20px;
   text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.btn-nav {
+  background: var(--blue);
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
 .hero {
-  background: #e5e7eb;
-  padding: 80px 0;
-  text-align: center;
+  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+  color: #fff;
+  padding: 100px 0;
 }
 
-.btn {
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+.btn-primary {
   display: inline-block;
-  margin-top: 20px;
-  background: #0f172a;
-  color: #fff;
-  padding: 12px 24px;
+  margin-top: 25px;
+  background: #fff;
+  color: var(--blue);
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .section.light {
-  background: #f9fafb;
+  background: var(--gray);
 }
 
-.grid {
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+
+.advantages {
   list-style: none;
   padding: 0;
+  font-size: 1.1rem;
+}
+
+.advantages li {
+  margin-bottom: 12px;
+}
+
+.cta {
+  background: var(--blue-dark);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
 }
 
 .footer {
   background: #0f172a;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px;
 }
+
