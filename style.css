@@ -62,7 +62,7 @@ header {
 }
 
 .btn-nav {
-  background: var(--blue);
+  background: var(--white);
   color: #fff !important;
   padding: 8px 14px;
   border-radius: 6px;
@@ -166,6 +166,7 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
