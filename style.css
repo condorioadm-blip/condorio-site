@@ -25,35 +25,22 @@ body {
   margin: auto;
 }
 
-/* ==============================
-   HEADER / NAV
-================================ */
-
+/* HEADER */
 header {
   background: #fff;
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 12px 0;
+  padding: 14px 0;
 }
 
 .nav-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-}
-
-.logo-area {
-  display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 48px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .logo-text {
@@ -64,17 +51,14 @@ header {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
   align-items: center;
-  justify-content: center;
 }
 
 .nav a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
-  padding: 6px 10px;
 }
 
 .btn-nav {
@@ -85,10 +69,7 @@ header {
   font-weight: 600;
 }
 
-/* ==============================
-   HERO
-================================ */
-
+/* HERO */
 .hero {
   background: linear-gradient(135deg, var(--blue), var(--blue-dark));
   color: #fff;
@@ -101,14 +82,11 @@ header {
 }
 
 .hero p {
-  max-width: 500px;
+  max-width: 520px;
   font-size: 1.1rem;
 }
 
-/* ==============================
-   SECTIONS
-================================ */
-
+/* SECTIONS */
 .section {
   padding: 80px 0;
 }
@@ -122,28 +100,22 @@ header {
   margin-bottom: 30px;
 }
 
-/* ==============================
-   CARDS
-================================ */
-
+/* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
 .card {
   background: #fff;
-  padding: 30px;
+  padding: 28px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   font-weight: 600;
 }
 
-/* ==============================
-   LISTAS
-================================ */
-
+/* LISTAS */
 .advantages {
   list-style: none;
   padding: 0;
@@ -160,10 +132,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* ==============================
-   FOOTER
-================================ */
-
+/* FOOTER */
 .footer {
   background: #0f172a;
   color: #fff;
@@ -171,24 +140,17 @@ header {
   padding: 25px;
 }
 
-/* ==============================
-   MOBILE
-================================ */
-
+/* MOBILE */
 @media (max-width: 768px) {
 
   .nav-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .nav {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .nav a {
-    width: 100%;
-    text-align: center;
+    gap: 10px;
   }
 
   .hero {
@@ -204,6 +166,7 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
