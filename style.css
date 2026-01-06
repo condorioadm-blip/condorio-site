@@ -215,6 +215,27 @@ body {
   line-height: 1.8;
 }
 
+/* ==============================
+   LOGO CONDORIO
+================================ */
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 48px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
 
 
 
