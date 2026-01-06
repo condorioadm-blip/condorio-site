@@ -87,8 +87,9 @@ header {
   }
 
   .nav a {
-    padding: 6px 0;
-  }
+  margin-left: 0;      /* 🔥 ISSO É O QUE FALTAVA */
+  padding: 6px 0;
+}
 
   .btn-nav {
     margin-top: 10px;
@@ -232,6 +233,7 @@ header {
   margin-bottom: 20px;
   line-height: 1.8;
 }
+
 
 
 
