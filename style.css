@@ -34,7 +34,6 @@ body {
 
 .header-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 18px 0;
 }
@@ -45,64 +44,46 @@ body {
   color: var(--blue);
 }
 
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-}
-
-/* ==============================
-   HEADER - MOBILE FIX
-================================ */
-
-header {
-  padding: 20px 0;
-}
-
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 @media (max-width: 768px) {
 
+  header {
+    padding: 20px 0;
+  }
+
   .nav-container {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    justify-content: center;   /* 🔥 MUITO IMPORTANTE */
+    gap: 18px;
   }
 
   .logo {
-    margin-bottom: 10px;
+    margin: 0;
   }
 
   .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     width: 100%;
   }
 
   .nav a {
-  margin-left: 0;      /* 🔥 ISSO É O QUE FALTAVA */
-  padding: 6px 0;
-}
+    margin: 0;
+    padding: 6px 0;
+  }
 
   .btn-nav {
-    margin-top: 10px;
+    margin-top: 12px;
   }
 }
 
-
-.btn-nav {
-  background: var(--blue);
-  color: #fff !important;
-  padding: 8px 16px;
-  border-radius: 6px;
-}
 
 .hero {
   background: linear-gradient(135deg, var(--blue), var(--blue-dark));
@@ -233,6 +214,7 @@ header {
   margin-bottom: 20px;
   line-height: 1.8;
 }
+
 
 
 
