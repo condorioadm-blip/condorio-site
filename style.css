@@ -63,7 +63,7 @@ header {
 
 .btn-nav {
   background: var(--blue);
-  color: #fff;
+  color: #fff !important;
   padding: 8px 14px;
   border-radius: 6px;
   font-weight: 600;
@@ -167,20 +167,7 @@ header {
   }
 }
 
-/* ==============================
-   CONTATO - TEXTO BRANCO
-================================ */
 
-#contato {
-  background: var(--blue-dark);
-  color: #fff;
-}
-
-#contato h2,
-#contato p,
-#contato strong {
-  color: #fff;
-}
 
 
 
