@@ -51,6 +51,14 @@ body {
 
 @media (max-width: 768px) {
 
+.logo-area {
+  justify-content: center;
+}
+
+.logo-img {
+  width: 42px;
+}
+  
   header {
     padding: 20px 0;
   }
@@ -235,6 +243,7 @@ body {
   font-weight: 700;
   color: var(--blue);
 }
+
 
 
 
