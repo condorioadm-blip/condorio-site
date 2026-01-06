@@ -167,6 +167,21 @@ header {
   }
 }
 
+/* ==============================
+   CONTATO - TEXTO BRANCO
+================================ */
+
+#contato {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+#contato h2,
+#contato p,
+#contato strong {
+  color: #fff;
+}
+
 
 
 
