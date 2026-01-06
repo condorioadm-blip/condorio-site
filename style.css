@@ -62,11 +62,12 @@ header {
 }
 
 .btn-nav {
-  background: var(--white);
-  color: #fff !important;
+  background: #ffffff;
+  color: var(--blue) !important;
   padding: 8px 14px;
   border-radius: 6px;
   font-weight: 600;
+  border: 2px solid var(--blue);
 }
 
 /* HERO */
@@ -166,6 +167,7 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
