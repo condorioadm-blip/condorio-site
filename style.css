@@ -137,3 +137,9 @@ body {
   padding: 25px;
 }
 
+.text-justified {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
